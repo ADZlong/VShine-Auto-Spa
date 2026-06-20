@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Services - VShine Auto Spa</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="VShine Auto Spa Home">
+          <img
+            src="images/logo.png"
+            alt="VShine Auto Spa logo"
+            width="44"
+            height="44"
+          />
+          <span class="logo-text">VShine Auto Spa</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link active" href="services.html">Services</a>
+            </li>
+            <li><a class="nav-link" href="booking.html">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container section" aria-label="Service packages">
+        <h2 class="section-title">PACKAGE OFFERINGS</h2>
+
+        <div class="packages-grid">
+          <article class="package-card">
+            <h3>Basic Wash</h3>
+            <div class="package-price">RM30</div>
+            <ul>
+              <li>Exterior Wash</li>
+              <li>Tire Cleaning</li>
+            </ul>
+          </article>
+
+          <article class="package-card">
+            <h3>Premium Detail</h3>
+            <div class="package-price">RM120</div>
+            <ul>
+              <li>Exterior Wash</li>
+              <li>Interior Vacuum</li>
+              <li>Dashboard Treatment</li>
+            </ul>
+          </article>
+
+          <article class="package-card">
+            <h3>Ceramic Coating</h3>
+            <div class="package-price">RM350</div>
+            <ul>
+              <li>Paint Preparation</li>
+              <li>Ceramic Protection</li>
+              <li>Gloss Enhancement</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="calc-wrap" aria-label="Price calculator">
+          <h2 class="section-title" style="margin-bottom: 10px">
+            PRICE CALCULATOR
+          </h2>
+          <p class="text-muted" style="margin: 0 0 12px; line-height: 1.6">
+            Select your vehicle, package, and add-ons to estimate your total.
+          </p>
+
+          <div class="calc-grid">
+            <div class="field">
+              <span class="label">Vehicle Type</span>
+              <select id="vehicleType" aria-label="Vehicle Type">
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="mpv">MPV</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <span class="label">Package</span>
+              <select id="packageType" aria-label="Package">
+                <option value="basic">Basic Wash</option>
+                <option value="premium">Premium Detail</option>
+                <option value="ceramic">Ceramic Coating</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <span class="label">Additional Services</span>
+              <div class="checkbox-row">
+                <label
+                  ><input id="extraWaxing" type="checkbox" /> Waxing
+                  (+RM20)</label
+                >
+                <label
+                  ><input id="extraEngine" type="checkbox" /> Engine Cleaning
+                  (+RM40)</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-actions">
+            <button id="calcBtn" class="btn btn-primary" type="button">
+              Calculate Price
+            </button>
+            <div id="calcOutput" class="calc-output">Estimated Price: RM0</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" aria-label="Gallery">
+        <h2 class="section-title">GALLERY</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item--main">
+            <img
+              src="images/gallery1.jpg"
+              alt="Car detailing gallery main image"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery2.jpg"
+              alt="Car detailing gallery image 2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/gallery3.jpg"
+              alt="Car detailing gallery image 3"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" aria-label="Call to action">
+        <div class="promo-banner">
+          <div>
+            <h2 class="section-title promo-title">SPECIAL PROMOTION</h2>
+            <p class="promo-sub">
+              Book your slot and enjoy our monthly package offer.
+            </p>
+          </div>
+          <div class="promo-actions">
+            <a class="btn btn-primary" href="booking.html">Book Appointment</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">VShine Auto Spa</p>
+          <p>Premium car detailing &amp; paint protection services.</p>
+          <p>
+            <strong>Location:</strong>
+            Jalan Pasir Puteh - Machang - Jeli, Kampung Membunga, 18500 Bandar
+            Machang, Kelantan
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+601161087710">+60 11-6108 7710</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:vshineautospa@gamil.com">vshineautospa@gamil.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <hr>
+        <div class="footer-copy">
+          &copy; <span id="year"></span> VShine Auto Spa. All rights reserved.
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (required) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery features -->
+    <script src="js/jquery-script.js"></script>
+    <!-- Vanilla JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

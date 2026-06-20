@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VShine Auto Spa</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="VShine Auto Spa Home">
+          <img
+            src="images/logo.png"
+            alt="VShine Auto Spa logo"
+            width="44"
+            height="44"
+          />
+          <span class="logo-text">VShine Auto Spa</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link active" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="booking.html">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="VShine Auto Spa hero section">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>VShine Auto Spa</h1>
+            <p class="hero-subtitle">
+              Professional Car Detailing &amp; Paint Protection Services
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="booking.html"
+                >Book Appointment</a
+              >
+              <button id="promoBtn" class="btn btn-outline" type="button">
+                View Promotion
+              </button>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <img src="images/hero-car.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container section about"
+        aria-label="About VShine Auto Spa"
+      >
+        <h2 class="section-title">About VShine Auto Spa</h2>
+        <p class="section-lead">
+          VShine Auto Spa provides premium detailing services including exterior
+          washing, interior cleaning, paint polishing, ceramic coating, and
+          paint protection. Our goal is to restore and maintain every vehicle to
+          showroom condition.
+        </p>
+      </section>
+
+      <section class="container section services" aria-label="Our Services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="card-grid" role="list">
+          <article class="card" role="listitem">
+            <img src="images/service1.jpg" alt="Exterior Wash service" />
+            <h3>Exterior Wash</h3>
+            <p>
+              Thorough exterior wash with safe, car-friendly cleaning and
+              finish-enhancing care.
+            </p>
+            <a class="btn btn-small btn-secondary" href="booking.html"
+              >Get Service</a
+            >
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="images/service2.jpg" alt="Interior Detailing service" />
+            <h3>Interior Detailing</h3>
+            <p>
+              Deep interior vacuuming and treatment to restore comfort,
+              cleanliness, and shine.
+            </p>
+            <a class="btn btn-small btn-secondary" href="booking.html"
+              >Get Service</a
+            >
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="images/service3.jpg" alt="Paint Polishing service" />
+            <h3>Paint Polishing</h3>
+            <p>
+              Refine paint clarity and gloss through polishing to reduce swirl
+              marks and imperfections.
+            </p>
+            <a class="btn btn-small btn-secondary" href="booking.html"
+              >Get Service</a
+            >
+          </article>
+
+          <article class="card" role="listitem">
+            <img src="images/service4.jpg" alt="Ceramic Coating service" />
+            <h3>Ceramic Coating</h3>
+            <p>
+              Long-lasting protection for your vehicle with a hydrophobic,
+              high-gloss coating.
+            </p>
+            <a class="btn btn-small btn-secondary" href="booking.html"
+              >Get Service</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="container section features" aria-label="Why choose us">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="feature-grid">
+          <div class="feature-box">
+            <div class="check">✓</div>
+            <h3>Experienced Team</h3>
+            <p>Trained detailers who follow a consistent, careful process.</p>
+          </div>
+          <div class="feature-box">
+            <div class="check">✓</div>
+            <h3>Premium Products</h3>
+            <p>Quality chemicals and protective coatings for better results.</p>
+          </div>
+          <div class="feature-box">
+            <div class="check">✓</div>
+            <h3>Affordable Packages</h3>
+            <p>Transparent pricing designed for different vehicle needs.</p>
+          </div>
+          <div class="feature-box">
+            <div class="check">✓</div>
+            <h3>Customer Satisfaction</h3>
+            <p>We listen to your goals and deliver a clean, showroom finish.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section promo" aria-label="Special Promotion">
+        <div class="promo-banner">
+          <div>
+            <h2 class="section-title promo-title">SPECIAL OFFER</h2>
+            <p class="promo-sub">Premium Detailing Package</p>
+            <p class="promo-price">
+              <span class="old-price">RM150</span> &rarr;
+              <span class="new-price">RM120</span>
+            </p>
+            <p class="promo-valid">Valid Until End Of Month</p>
+          </div>
+          <div class="promo-actions">
+            <button id="promoBtn2" class="btn btn-primary" type="button">
+              View Promotion
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Promotion Modal -->
+    <div
+      id="promoModal"
+      class="modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="promoModalTitle"
+    >
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          id="promoClose"
+          type="button"
+          aria-label="Close promotion"
+        >
+          &times;
+        </button>
+        <h2 id="promoModalTitle">SPECIAL OFFER</h2>
+        <h3>Premium Detailing Package</h3>
+        <p class="modal-price">
+          <span class="old-price">RM150</span> &rarr;
+          <span class="new-price">RM120</span>
+        </p>
+        <p class="modal-valid">Valid Until End Of Month</p>
+        <a class="btn btn-primary" href="booking.html">Book With Discount</a>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">VShine Auto Spa</p>
+          <p>Premium car detailing &amp; paint protection services.</p>
+          <p>
+            <strong>Location:</strong>
+            Jalan Pasir Puteh - Machang - Jeli, Kampung Membunga, 18500 Bandar
+            Machang, Kelantan
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+601161087710">+60 11-6108 7710</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:vshineautospa@gamil.com">vshineautospa@gamil.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <hr>
+        <div class="footer-copy">
+          &copy; <span id="year"></span> VShine Auto Spa. All rights reserved.
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (required) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery features -->
+    <script src="js/jquery-script.js"></script>
+    <!-- Vanilla JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

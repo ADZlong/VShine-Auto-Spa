@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Appointment - VShine Auto Spa</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="VShine Auto Spa Home">
+          <img
+            src="images/logo.png"
+            alt="VShine Auto Spa logo"
+            width="44"
+            height="44"
+          />
+          <span class="logo-text">VShine Auto Spa</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link active" href="booking.html">Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container section">
+      <h2 class="section-title">Book Appointment</h2>
+
+      <form id="bookingForm" action="#" method="post" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label class="label" for="customerName">Customer Name</label>
+            <input
+              id="customerName"
+              name="customerName"
+              type="text"
+              placeholder="Your full name"
+            />
+            <div id="errName" class="inline-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="customerEmail">Email Address</label>
+            <input
+              id="customerEmail"
+              name="customerEmail"
+              type="email"
+              placeholder="name@gmail.com"
+            />
+            <div id="errEmail" class="inline-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="customerPhone">Phone Number</label>
+            <input
+              id="customerPhone"
+              name="customerPhone"
+              type="tel"
+              placeholder="e.g. 012-345 6789"
+            />
+          </div>
+
+          <div class="field">
+            <span class="label">Vehicle Type</span>
+            <div
+              class="checkbox-row"
+              role="radiogroup"
+              aria-label="Vehicle Type"
+            >
+              <label
+                ><input type="radio" name="vehicleType" value="sedan" />
+                Sedan</label
+              >
+              <label
+                ><input type="radio" name="vehicleType" value="suv" />
+                SUV</label
+              >
+              <label
+                ><input type="radio" name="vehicleType" value="mpv" />
+                MPV</label
+              >
+              <span></span>
+            </div>
+            <div id="errVehicle" class="inline-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field full">
+            <label class="label" for="servicePackage">Service Package</label>
+            <select id="servicePackage" name="servicePackage">
+              <option value="">Select a package</option>
+              <option value="basic">Basic Wash</option>
+              <option value="premium">Premium Detail</option>
+              <option value="ceramic">Ceramic Coating</option>
+            </select>
+            <div id="errPackage" class="inline-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field full">
+            <label class="label" for="appointmentDate">Appointment Date</label>
+            <input id="appointmentDate" name="appointmentDate" type="date" />
+            <div id="errDate" class="inline-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field full">
+            <label class="label" for="additionalNotes">Additional Notes</label>
+            <textarea
+              id="additionalNotes"
+              name="additionalNotes"
+              rows="4"
+              maxlength="200"
+              placeholder="Any special request (e.g., pet hair, heavy stains, swirl marks)..."
+            ></textarea>
+            <div id="notesCounter" class="char-counter">0 / 200 Characters</div>
+          </div>
+        </div>
+
+        <div class="calc-actions" style="margin-top: 18px">
+          <button class="btn btn-primary" type="submit">Submit Booking</button>
+          <span class="text-muted"
+            >We will confirm your booking by email/phone.</span
+          >
+        </div>
+      </form>
+
+      <section class="faq-wrap" aria-label="Frequently Asked Questions">
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            How long does detailing take?
+          </button>
+          <div class="faq-a">
+            Typical detailing takes between
+            <strong>2 to 4 hours</strong> depending on the vehicle condition and
+            chosen package.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Do I need an appointment?</button>
+          <div class="faq-a">
+            Appointment is recommended to secure your preferred time slot.
+            Walk-ins are subject to availability.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            What payment methods do you accept?
+          </button>
+          <div class="faq-a">
+            We accept cash and online transfers. For your convenience, we will
+            provide payment details during confirmation.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            How often should I detail my car?
+          </button>
+          <div class="faq-a">
+            For best results, detail every <strong>3 to 6 months</strong>. If
+            you drive frequently or in dusty areas, you may need it sooner.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand">VShine Auto Spa</p>
+          <p>Premium car detailing &amp; paint protection services.</p>
+          <p>
+            <strong>Location:</strong>
+            Jalan Pasir Puteh - Machang - Jeli, Kampung Membunga, 18500 Bandar
+            Machang, Kelantan
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+601161087710">+60 11-6108 7710</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:vshineautospa@gamil.com">vshineautospa@gamil.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <hr>
+        <div class="footer-copy">
+          &copy; <span id="year"></span> VShine Auto Spa. All rights reserved.
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (required) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery features -->
+    <script src="js/jquery-script.js"></script>
+    <!-- Vanilla JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
