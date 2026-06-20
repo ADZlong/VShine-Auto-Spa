@@ -1,100 +1,202 @@
-VSHINE AUTO SPA
+# 🚗 VShine Auto Spa
 
-ICT600 - Web Technology and Application
-Individual Assignment
+A responsive multi-page car detailing and auto spa website developed for the **ICT600 Web Technology and Application** individual assignment.
 
-Student Name: Athif Dzikri
-Project Title: VShine Auto Spa
-Website Type: Responsive Small Business Website
+VShine Auto Spa is a fictional automotive detailing business that offers professional car care services including exterior washing, interior detailing, paint polishing, ceramic coating, and paint protection solutions.
 
 ---
 
-PROJECT DESCRIPTION
+## ✨ Features
 
-VShine Auto Spa is a fictional car detailing and auto spa business website developed as part of the ICT600 Web Technology and Application individual assignment.
+* **Responsive Multi-Page Website**
 
-The website promotes professional vehicle detailing services including exterior washing, interior cleaning, paint polishing, ceramic coating, and paint protection.
+  * Home Page
+  * Services Page
+  * Booking Page
+
+* **Professional Auto Spa Design**
+
+  * Business-oriented layout
+  * Clean and modern interface
+  * Mobile-friendly navigation
+
+* **Price Calculator**
+
+  * Select vehicle type
+  * Choose service package
+  * Add optional services
+  * Automatically calculate estimated price
+
+* **Appointment Booking Form**
+
+  * Customer information collection
+  * Service package selection
+  * Appointment scheduling
+
+* **Form Validation**
+
+  * Required field validation
+  * Email format validation
+  * Inline error messages
+
+* **Character Counter**
+
+  * Live note counter for customer requests
+
+* **jQuery Interactive Features**
+
+  * Promotion Modal Popup
+  * FAQ Accordion
+  * Gallery Fade-In Animation
+
+* **Responsive Design**
+
+  * Desktop
+  * Tablet
+  * Mobile
 
 ---
 
-TECHNOLOGIES USED
+## 📁 File Structure
+
+```text
+VShineAutoSpa/
+│
+├── index.html
+├── services.html
+├── booking.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── script.js
+│   └── jquery-script.js
+│
+├── images/
+│   ├── logo.png
+│   ├── hero-car.jpg
+│   ├── service1.jpg
+│   ├── service2.jpg
+│   ├── service3.jpg
+│   ├── gallery1.jpg
+│   ├── gallery2.jpg
+│   ├── gallery3.jpg
+│   ├── gallery4.jpg
+│   ├── gallery5.jpg
+│   └── gallery6.jpg
+│
+└── README.md
+```
+
+---
+
+## 🛠 Technologies Used
+
+### Front-End
 
 * HTML5
 * CSS3
 * JavaScript (Vanilla JS)
 * jQuery
 
----
+### Design Techniques
 
-WEBSITE PAGES
-
-1. Home Page (index.html)
-
-   * Hero Section
-   * About Us
-   * Services Overview
-   * Why Choose Us
-   * Special Promotion
-
-2. Services Page (services.html)
-
-   * Service Packages
-   * Price Calculator
-   * Gallery Section
-
-3. Booking Page (booking.html)
-
-   * Appointment Form
-   * Form Validation
-   * Character Counter
-   * FAQ Accordion
-
----
-
-FEATURES IMPLEMENTED
-
-HTML5
-
-* Semantic HTML Structure
-* Responsive Multi-Page Navigation
-* Images with Alt Attributes
-
-CSS3
-
-* Responsive Layout
+* Semantic HTML
 * Flexbox
 * CSS Grid
 * Media Queries
-* Hover Effects
+* Responsive Web Design
 
-JavaScript
+---
 
-* Form Validation
-* Character Counter
+## 📄 Website Pages
+
+### 🏠 Home Page
+
+* Hero Banner
+* About Us
+* Service Overview
+* Why Choose Us
+* Promotion Section
+
+### 🔧 Services Page
+
+* Service Packages
 * Price Calculator
+* Vehicle Gallery
 
-jQuery
+### 📅 Booking Page
 
-* Promotion Modal
+* Appointment Form
+* Form Validation
 * FAQ Accordion
-* Fade-In Gallery Animation
 
 ---
 
-RESPONSIVE DESIGN
+## 🎯 Assignment Requirements Covered
 
-The website is optimized for:
-
-* Desktop
-* Tablet
-* Mobile Devices
+| Requirement                  | Status |
+| ---------------------------- | ------ |
+| Multi-Page Website           | ✅      |
+| Semantic HTML5               | ✅      |
+| External CSS                 | ✅      |
+| Responsive Design            | ✅      |
+| JavaScript Validation        | ✅      |
+| Dynamic JavaScript Feature   | ✅      |
+| jQuery Animation             | ✅      |
+| jQuery Interactive Component | ✅      |
+| Mobile Friendly              | ✅      |
 
 ---
 
-AUTHOR
+## 🎨 Colour Palette
 
-Athif Dzikri
+| Purpose    | Colour  |
+| ---------- | ------- |
+| Primary    | #d62828 |
+| Secondary  | #222222 |
+| Background | #ffffff |
+| Text       | #333333 |
+| Accent     | #f8f5e4 |
 
-ICT600 - Web Technology and Application
+---
+
+## 🚀 GitHub Pages Deployment
+
+This project can be published using GitHub Pages:
+
+1. Create a GitHub repository
+2. Upload all project files
+3. Open **Settings**
+4. Navigate to **Pages**
+5. Select:
+
+   * Branch: `main`
+   * Folder: `/ (root)`
+6. Save settings
+7. Wait a few minutes for deployment
+
+Live URL Format:
+
+```text
+https://your-username.github.io/vshine-auto-spa/
+```
+
+---
+
+## 👨‍💻 Author
+
+**Athif Dzikri**
+
+ICT600 – Web Technology and Application
+
+Faculty of Computer and Mathematical Sciences
+
+Universiti Teknologi MARA (UiTM)
 
 2026
+
+---
+
+Made with 🚗✨ for ICT600 Web Technology and Application Assignment.
