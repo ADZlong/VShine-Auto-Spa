@@ -1,11 +1,4 @@
-/* VShine Auto Spa - jQuery interactive components:
-   - Promotion modal (.fadeIn/.fadeOut)
-   - FAQ accordion (.slideDown/.slideUp)
-   - Gallery fade-in animation (.fadeIn)
-*/
-
 $(document).ready(function () {
-  // Promo modal
   const $promoModal = $("#promoModal");
   const $promoBtn = $("#promoBtn");
   const $promoBtn2 = $("#promoBtn2");
@@ -36,7 +29,6 @@ $(document).ready(function () {
   });
 
   $promoModal.on("click", function (e) {
-    // Close when clicking outside modal content
     if ($(e.target).is("#promoModal")) {
       closeModal();
     }
@@ -46,7 +38,6 @@ $(document).ready(function () {
     if (e.key === "Escape") closeModal();
   });
 
-  // FAQ accordion (booking.html)
   const $faqItems = $(".faq-item");
   $faqItems.each(function () {
     const $item = $(this);
@@ -54,9 +45,7 @@ $(document).ready(function () {
     const $a = $item.find(".faq-a");
 
     $q.on("click", function () {
-      // Close other items
       $faqItems.not($item).find(".faq-a").slideUp(180);
-      // Toggle current
       if ($a.is(":visible")) {
         $a.slideUp(180);
       } else {
@@ -65,7 +54,6 @@ $(document).ready(function () {
     });
   });
 
-  // Gallery fadeIn (services.html)
   const $galleryItems = $(".gallery-item");
   if ($galleryItems.length) {
     $galleryItems.hide();
