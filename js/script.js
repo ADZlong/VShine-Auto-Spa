@@ -1,17 +1,7 @@
-/* VShine Auto Spa - Vanilla JS features: 
-   - Price calculator
-   - Booking form validation (inline errors only)
-   - Character counter for Additional Notes
-*/
-
 (function () {
-  // Footer year
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // --------------------
-  // PRICE CALCULATOR (services.html)
-  // --------------------
   const calcBtn = document.getElementById("calcBtn");
   if (calcBtn) {
     const vehicleTypeEl = document.getElementById("vehicleType");
@@ -19,7 +9,7 @@
     const waxingEl = document.getElementById("extraWaxing");
     const engineEl = document.getElementById("extraEngine");
     const outputEl = document.getElementById("calcOutput");
-
+     
     const baseByPackage = {
       basic: 30,
       premium: 120,
@@ -33,44 +23,34 @@
     };
 
     function money(n) {
-      // round to nearest RM integer for beginner-friendly output
       return Math.round(n);
     }
 
     calcBtn.addEventListener("click", function () {
       const vehicle = vehicleTypeEl ? vehicleTypeEl.value : "sedan";
       const pkg = packageEl ? packageEl.value : "basic";
-
       const base = baseByPackage[pkg] ?? 0;
       const mult = vehicleMultiplier[vehicle] ?? 1;
-
       const waxingCost = waxingEl && waxingEl.checked ? 20 : 0;
       const engineCost = engineEl && engineEl.checked ? 40 : 0;
-
       const total = base * mult + waxingCost + engineCost;
-
       if (outputEl) {
         outputEl.textContent = `Estimated Price: RM${money(total)}`;
       }
     });
   }
 
-  // --------------------
-  // BOOKING FORM VALIDATION (booking.html)
-  // --------------------
   const bookingForm = document.getElementById("bookingForm");
   if (bookingForm) {
     const getVal = (id) => document.getElementById(id)?.value.trim() ?? "";
-
     const nameEl = document.getElementById("customerName");
     const emailEl = document.getElementById("customerEmail");
     const phoneEl = document.getElementById("customerPhone");
-
     const vehicleEls = document.getElementsByName("vehicleType");
     const packageSel = document.getElementById("servicePackage");
     const dateEl = document.getElementById("appointmentDate");
     const notesEl = document.getElementById("additionalNotes");
-
+     
     const err = {
       name: document.getElementById("errName"),
       email: document.getElementById("errEmail"),
@@ -92,7 +72,6 @@
     }
 
     function isValidEmail(email) {
-      // Simple, beginner-friendly email validation
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 
@@ -103,7 +82,6 @@
       return "";
     }
 
-    // Character counter
     if (notesEl) {
       const counterEl = document.getElementById("notesCounter");
       const max = 200;
@@ -117,7 +95,6 @@
     }
 
     bookingForm.addEventListener("submit", function (e) {
-      // Reset errors
       Object.values(err).forEach(hideErr);
 
       const name = nameEl ? nameEl.value.trim() : "";
