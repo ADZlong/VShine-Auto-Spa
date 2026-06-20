@@ -1,5 +1,3 @@
-/* VShine Auto Spa - ICT600 Web Tech Assignment Styles */
-
 :root {
   --primary: #d62828;
   --secondary: #222222;
@@ -406,12 +404,11 @@ a {
   color: var(--secondary);
 }
 
-/* Modal */
 .modal {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
-  display: none; /* jQuery fadeIn will show */
+  display: none;
   z-index: 1000;
   padding: 24px;
 }
@@ -453,7 +450,6 @@ a {
   font-weight: 800;
 }
 
-/* Services page */
 .packages-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -486,7 +482,6 @@ a {
   color: var(--muted);
 }
 
-/* Calculator */
 .calc-wrap {
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -550,7 +545,6 @@ textarea:focus {
   color: var(--secondary);
 }
 
-/* Gallery */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -569,7 +563,6 @@ textarea:focus {
   object-fit: cover;
 }
 
-/* Booking */
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -638,7 +631,6 @@ textarea:focus {
   background: rgba(214, 40, 40, 0.06);
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
