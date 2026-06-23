@@ -162,29 +162,6 @@ VShineAutoSpa/
 
 ---
 
-## 🚀 GitHub Pages Deployment
-
-This project can be published using GitHub Pages:
-
-1. Create a GitHub repository
-2. Upload all project files
-3. Open **Settings**
-4. Navigate to **Pages**
-5. Select:
-
-   * Branch: `main`
-   * Folder: `/ (root)`
-6. Save settings
-7. Wait a few minutes for deployment
-
-Live URL Format:
-
-```text
-https://your-username.github.io/vshine-auto-spa/
-```
-
----
-
 ## 👨‍💻 Author
 
 **Athif Dzikri**
